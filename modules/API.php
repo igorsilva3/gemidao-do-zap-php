@@ -21,7 +21,7 @@ class TotalVoice_API {
         $url = 'https://api.totalvoice.com.br/verificacao';
 
         //Configura o conteúdo a ser enviado
-        $conteudo = '{"numero_destino":"83993212697","nome_produto":"API TV","tamanho":"5","tts":false}';
+        $conteudo = '{"numero_destino":"$number","nome_produto":"API TV","tamanho":"5","tts":false}';
 
         try{
             //Inicializa cURL para uma URL.
