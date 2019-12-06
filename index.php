@@ -7,16 +7,26 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<div class="content">
-		<p class="h4">API - Total Voice</p>
-		<form action="inc/sms.php" method="post">
-	        <div class="form-group">
-	    		<label>Telefone</label>
-	    		<input type="number" class="form-control" name="telefone" placeholder="Seu número" min="0">
-	  		</div>
-	  		<button type="submit" class="btn btn-primary">Enviar</button>
-    	</form>	
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Verificação <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Saldo <span class="sr-only">(current)</span></a>
+		      </li>
+		    </ul>
+	  	</div>
+	</nav>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
