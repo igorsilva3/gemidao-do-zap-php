@@ -9,7 +9,7 @@ class TotalVoice_API {
         if (!empty($httpRequisicao)) $this->httpRequisicao = $httpRequisicao;
     }
 
-    public function configuration($number = null) {
+    public function verification($number = null) {
 
         //Define os dados de cabeçalho da requisição
         $cabecalho = array(
@@ -21,7 +21,7 @@ class TotalVoice_API {
         $url = 'https://api.totalvoice.com.br/verificacao';
 
         //Configura o conteúdo a ser enviado
-        $conteudo = '{"numero_destino":"$number","nome_produto":"API TV","tamanho":"5","tts":false}';
+        $conteudo = '{"numero_destino":"'. $number .'","nome_produto":"API TV","tamanho":"5","tts":false}';
 
         try{
             //Inicializa cURL para uma URL.
