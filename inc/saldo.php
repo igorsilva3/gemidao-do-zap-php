@@ -7,8 +7,6 @@
         
     //Cria um novo objeto da classe
     $Comunicacao = new TotalVoice_API(API_TOKEN, METHOD_CATCH);
-
-    $phone = $_POST['telefone'];
         
     //Faz a chamada da função, passando os parâmetros
     $resposta = $Comunicacao->saldo();
