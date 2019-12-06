@@ -1,6 +1,6 @@
 <?php
     //Faz o include da classe TotalVoice_API
-    require_once '../modules/API-VERIFICATION.php';
+    require_once '../modules/API-VERIFICACAO.php';
 
     //Faz o include da variavel global API-TOKEN
     require_once './config.php';
