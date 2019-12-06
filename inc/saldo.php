@@ -1,19 +1,18 @@
 <?php
     //Faz o include da classe TotalVoice_API
-    require_once '../modules/API-VERIFICATION.php';
+    require_once '../modules/API-SALDO.php';
 
     //Faz o include da variavel global API-TOKEN
     require_once './config.php';
         
     //Cria um novo objeto da classe
-    $Comunicacao = new TotalVoice_API(API_TOKEN, METHOD_SEND);
+    $Comunicacao = new TotalVoice_API(API_TOKEN, METHOD_CATCH);
 
     $phone = $_POST['telefone'];
         
     //Faz a chamada da função, passando os parâmetros
-    $resposta = $Comunicacao->verification($phone);
+    $resposta = $Comunicacao->saldo();
         
     //Exibe a resposta da API
     echo $resposta;
-
 ?>

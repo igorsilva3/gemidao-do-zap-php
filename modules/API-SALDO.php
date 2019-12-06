@@ -9,7 +9,7 @@ class TotalVoice_API {
         if (!empty($httpRequisicao)) $this->httpRequisicao = $httpRequisicao;
     }
 
-    public function saldo($number = null) {
+    public function saldo() {
 
         //Define os dados de cabeçalho da requisição
         $cabecalho = array(
