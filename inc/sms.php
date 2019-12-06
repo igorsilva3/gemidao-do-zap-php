@@ -11,7 +11,7 @@
     $phone = $_POST['telefone'];
         
     //Faz a chamada da função, passando os parâmetros
-    $resposta = $Comunicacao->configuration($phone);
+    $resposta = $Comunicacao->verification($phone);
         
     //Exibe a resposta da API
     echo $resposta;
