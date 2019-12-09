@@ -3,7 +3,7 @@
     require_once '../modules/API-AUDIO.php';
 
     //Faz o include da variavel global API-TOKEN
-    require_once './config.php';
+    require_once '../inc/config.php';
         
     //Cria um novo objeto da classe
     $Comunicacao = new TotalVoice_API(API_TOKEN, METHOD_SEND);
@@ -12,7 +12,12 @@
         
     //Faz a chamada da função, passando os parâmetros
     $resposta = $Comunicacao->audio($phone);
-        
+
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('Sucesso!')
+        window.location.href='../pages/audio.html';
+        </SCRIPT>");
+    
     //Exibe a resposta da API
     echo $resposta;
 ?>
