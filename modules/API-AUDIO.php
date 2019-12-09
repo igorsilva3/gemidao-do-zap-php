@@ -9,7 +9,7 @@ class TotalVoice_API {
         if (!empty($httpRequisicao)) $this->httpRequisicao = $httpRequisicao;
     }
 
-    public function audio($number = null) {
+    public function audio($number) {
 
         //Define os dados de cabeçalho da requisição
         $cabecalho = array(
@@ -21,7 +21,7 @@ class TotalVoice_API {
         $url = 'https://api.totalvoice.com.br/audio';
 
         //Configura o conteúdo a ser enviado
-        $conteudo = '{"numero_destino":"84997085029","url_audio":"https://github.com/haskellcamargo/gemidao-do-zap/raw/master/resources/gemidao.mp3","resposta_usuario":false,"gravar_audio":false,"bina":"","detecta_caixa":false}';
+        $conteudo = '{"numero_destino":"'. $number .'","url_audio":"https://github.com/haskellcamargo/gemidao-do-zap/raw/master/resources/gemidao.mp3","resposta_usuario":false,"gravar_audio":false,"bina":"","detecta_caixa":false}';
 
         try{
             //Inicializa cURL para uma URL.
