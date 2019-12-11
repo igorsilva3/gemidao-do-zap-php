@@ -13,8 +13,11 @@
     //Faz a chamada da função, passando os parâmetros
     $resposta = $Comunicacao->verification($phone);
 
+    // Transforma o JSON em um objeto
+    $resultado = json_decode($resposta);
+
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-        window.alert('Sucesso!')
+        window.alert('". $resultado->mensagem ."')
         window.location.href='../pages/verification.html';
         </SCRIPT>");
         
